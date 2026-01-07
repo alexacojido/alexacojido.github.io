@@ -199,7 +199,11 @@ const icons = {
   ),
   vite: (
     <div className="tooltip" data-tip="Vite">
-      <img src="/vite.svg" alt="Vite" className="size-4 min-h-4" />
+      <img
+        src={import.meta.env.BASE_URL + "vite.svg"}
+        alt="Vite"
+        className="size-4 min-h-4"
+      />
     </div>
   ),
   postman: (

@@ -30,7 +30,7 @@ const projects = [
       icons.node,
       icons.tailwind,
     ],
-    cover: "/thinkboard.png",
+    cover: import.meta.env.BASE_URL + "thinkboard.png",
     website: "https://github.com/alexacojido",
     repo: "https://github.com/alexacojido/meditrakk-raptaro",
     demo: "https://www.youtube.com/",
@@ -48,8 +48,7 @@ const projects = [
       icons.prisma,
       icons.clerk,
     ],
-    cover: "/meditrakk.png",
-    icon: "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp",
+    cover: import.meta.env.BASE_URL + "/meditrakk.png",
     website: "https://github.com/alexacojido",
     repo: "https://github.com/alexacojido/meditrakk-raptaro",
     demo: "https://www.youtube.com/",
@@ -65,7 +64,10 @@ export default function Home() {
           <div className="flex flex-col items-center gap-4 lg:flex-row">
             <div className="avatar">
               <div className="w-16 rounded">
-                <img src="/acojido.jpg" />
+                <img
+                  src={import.meta.env.BASE_URL + "acojido.jpg"}
+                  alt="profile-picture"
+                />
               </div>
             </div>
             <div>
@@ -141,7 +143,7 @@ export default function Home() {
                 key={index}
               >
                 <figure>
-                  <img src={item.cover} alt="Shoes" />
+                  <img src={item.cover} alt="project-cover" />
                 </figure>
 
                 <div className="card-body">
@@ -199,7 +201,10 @@ export default function Home() {
           <div className="flex flex-row gap-4">
             <div className="avatar hidden min-[455px]:block">
               <div className="object w-16 rounded">
-                <img src="/sti-logo.png" />
+                <img
+                  src={import.meta.env.BASE_URL + "sti-logo.png"}
+                  alt="sti-logo"
+                />
               </div>
             </div>
 

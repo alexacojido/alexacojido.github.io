@@ -216,7 +216,7 @@ export default function Home() {
                 STI College Munoz Edsa
               </span>
               <span className="block text-sm text-base-content/70">
-                Aug 2022 - Jun 2027
+                Aug 2022 - Jun 2026
               </span>
             </div>
           </div>

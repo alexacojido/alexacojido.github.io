@@ -55,7 +55,7 @@ const projects = [
       icons.prisma,
       icons.clerk,
     ],
-    cover: import.meta.env.BASE_URL + "/meditrakk.png",
+    cover: import.meta.env.BASE_URL + "meditrakk.png",
     website: "https://github.com/alexacojido",
     repo: "https://github.com/alexacojido/meditrakk-raptaro",
     demo: "https://www.youtube.com/",

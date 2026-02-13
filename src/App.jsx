@@ -1,4 +1,5 @@
 import icons from "./lib/icons";
+import { FileText } from "lucide-react";
 
 const frontend_skills = [
   icons.html,
@@ -14,7 +15,13 @@ const backend_skills = [icons.node, icons.express, icons.prisma, icons.clerk];
 
 const database_skills = [icons.mongodb, icons.supabase];
 
-const tools_skills = [icons.git, icons.github, icons.vite, icons.postman];
+const tools_skills = [
+  icons.git,
+  icons.github,
+  icons.docker,
+  icons.vite,
+  icons.postman,
+];
 
 const projects = [
   {
@@ -53,6 +60,13 @@ const projects = [
     repo: "https://github.com/alexacojido/meditrakk-raptaro",
     demo: "https://www.youtube.com/",
   },
+];
+
+const certificates = [
+  "vercel-react.png",
+  "zuitt-web-dev.png",
+  "sololearn-html.png",
+  "sololearn-js.png",
 ];
 
 export default function Home() {
@@ -97,7 +111,27 @@ export default function Home() {
                 {icons.wakatime}
               </a>
             </button>
+            <button className="btn btn-square btn-sm">
+              <a href="acojido-resume.pdf" target="_blank" rel="noreferrer">
+                <div className="tooltip" data-tip="Resume">
+                  <FileText className="size-4" />
+                </div>
+              </a>
+            </button>
           </div>
+        </section>
+
+        {/* About Me */}
+        <section className="space-y-2">
+          <h2 className="text-4xl font-semibold">About Me</h2>
+          <p className="text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            massa est, sodales sit amet purus nec, placerat tempor ligula. Nam
+            purus ligula, facilisis id interdum nec, imperdiet ullamcorper nunc.
+            Nulla facilisi. Donec nec viverra est. Donec congue consequat
+            mattis. In hac habitasse platea dictumst. Aliquam mattis eu purus at
+            facilisis.
+          </p>
         </section>
 
         {/* Skills */}
@@ -133,6 +167,9 @@ export default function Home() {
           ))}
         </section>
 
+        {/* Work Experience */}
+        <section></section>
+
         {/* Projects */}
         <section>
           <h2 className="mb-4 text-4xl font-semibold">Projects</h2>
@@ -143,8 +180,28 @@ export default function Home() {
                 key={index}
               >
                 <figure>
-                  <img src={item.cover} alt="project-cover" />
+                  <label htmlFor={`modal-${index}`} className="cursor-pointer">
+                    <img src={item.cover} alt="project-cover" />
+                  </label>
                 </figure>
+
+                <input
+                  type="checkbox"
+                  id={`modal-${index}`}
+                  className="modal-toggle"
+                />
+
+                <div className="modal" role="dialog">
+                  <div className="modal-box max-w-[90%]">
+                    <figure>
+                      <img src={item.cover} alt="project-cover" />
+                    </figure>
+                  </div>
+
+                  <label className="modal-backdrop" htmlFor={`modal-${index}`}>
+                    Close
+                  </label>
+                </div>
 
                 <div className="card-body">
                   <div className="flex flex-col gap-4 lg:flex-row">
@@ -232,7 +289,28 @@ export default function Home() {
         </section>
 
         {/* Certificates */}
-        <section></section>
+        <section>
+          <h2 className="mb-4 text-4xl font-semibold">Certificates</h2>
+          <div className="carousel aspect-video w-full">
+            {certificates.map((item, index) => (
+              <div
+                key={index}
+                id={`slide-${index}`}
+                className="carousel-item w-full"
+              >
+                <img src={item} className="w-full" />
+              </div>
+            ))}
+          </div>
+
+          <div className="flex w-full justify-center gap-2 py-2">
+            {certificates.map((_, index) => (
+              <a key={index} href={`#slide-${index}`} className="btn btn-xs">
+                {index + 1}
+              </a>
+            ))}
+          </div>
+        </section>
       </main>
     </div>
   );

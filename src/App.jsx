@@ -131,7 +131,7 @@ export default function Home() {
         {/* About Me */}
         <section className="space-y-2">
           <h2 className="text-4xl font-semibold">About Me</h2>
-          <p className="text-justify">
+          <p>
             I am a Computer Science student passionate about building clean,
             interactive, and user-focused web applications. I enjoy turning
             ideas into responsive interfaces using modern tools like React and

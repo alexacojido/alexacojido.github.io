@@ -132,12 +132,14 @@ export default function Home() {
         <section className="space-y-2">
           <h2 className="text-4xl font-semibold">About Me</h2>
           <p className="text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            massa est, sodales sit amet purus nec, placerat tempor ligula. Nam
-            purus ligula, facilisis id interdum nec, imperdiet ullamcorper nunc.
-            Nulla facilisi. Donec nec viverra est. Donec congue consequat
-            mattis. In hac habitasse platea dictumst. Aliquam mattis eu purus at
-            facilisis.
+            I am a Computer Science student passionate about building clean,
+            interactive, and user-focused web applications. I enjoy turning
+            ideas into responsive interfaces using modern tools like React and
+            TypeScript, while continuously strengthening my understanding of
+            backend systems. I value clarity, simplicity, and growth. Whether I
+            am building a web application or experimenting with new
+            technologies, I aim to improve every day and write better, more
+            intentional code.
           </p>
         </section>
 

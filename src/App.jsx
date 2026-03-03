@@ -298,8 +298,11 @@ export default function Home() {
             </div>
           </div>
           <p>
-            Coursework included web development, databases, and software
-            engineering; built multiple full-stack projects.
+            Learned foundational computer science concepts. Built mini web
+            applications and coding exercises using HTML, CSS, and JavaScript,
+            strengthening frontend development skills. Also gained knowledge in
+            data structures, basic security principles, and problem-solving,
+            ensuring clean and efficient code.
           </p>
           <div className="space-x-1">
             <span className="badge badge-neutral">{icons.html}</span>

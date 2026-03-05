@@ -105,16 +105,6 @@ export default function Home() {
             </div>
             <div className="btn btn-square btn-sm">
               <a
-                href="https://wakatime.com/@alexacojido"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Wakatime"
-              >
-                {icons.wakatime}
-              </a>
-            </div>
-            <div className="btn btn-square btn-sm">
-              <a
                 href="acojido-resume.pdf"
                 target="_blank"
                 rel="noreferrer"

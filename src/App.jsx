@@ -25,24 +25,6 @@ const tools_skills = [
 
 const projects = [
   {
-    name: "Thinkboard",
-    duration: "Dec 2025",
-    role: "Fullstack Developer",
-    description:
-      "Built a collaborative idea-sharing platform using the MERN stack, featuring real-time updates.",
-    skills: [
-      icons.mongodb,
-      icons.express,
-      icons.react,
-      icons.node,
-      icons.tailwind,
-    ],
-    cover: import.meta.env.BASE_URL + "thinkboard.webp",
-    website: "https://github.com/alexacojido",
-    repo: "https://github.com/alexacojido/meditrakk-raptaro",
-    demo: "https://www.youtube.com/",
-  },
-  {
     name: "MediTrakk",
     duration: "Jan 2024 - Dec 2025",
     role: "Fullstack Developer",
